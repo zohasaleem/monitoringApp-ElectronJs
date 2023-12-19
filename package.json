@@ -1,0 +1,29 @@
+{
+  "name": "activity-monitor",
+  "version": "1.0.0",
+  "description": "CPU activity monitor",
+  "repository": "electron/simple-samples",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "build":{
+    "appId": "com.activitymonitor.autoupdater",
+    "productName": "Autoupdater App",
+    "win":{
+      "target": "nsis"
+    },
+    "directories":{
+      "output": "dist"
+    }
+  },
+  "author": "Zoha Saleem",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "electron-updater": "^6.1.7"
+  }
+}
